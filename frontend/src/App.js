@@ -7,6 +7,9 @@ import { AuthProvider } from './contexts/AuthContext';
 import VideoMeetComponent from './pages/VideoMeet';
 import HomeComponent from './pages/home';
 import History from './pages/history';
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 function App() {
   return (
@@ -14,10 +17,10 @@ function App() {
       <Router>
         <AuthProvider>
           <Routes>
-            <Route path='/' element={<LandingPage />}/>
-            <Route path='/auth' element={<Authentication />}/>
+            <Route path='/' element={<LandingPage />} />
+            <Route path='/auth' element={<Authentication />} />
             <Route path='/home' element={<HomeComponent />} />
-            <Route path='/history' element={<History/>}/>
+            <Route path='/history' element={<History />} />
             <Route path='/:url' element={<VideoMeetComponent />} />
           </Routes>
         </AuthProvider>
