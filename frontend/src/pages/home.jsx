@@ -67,11 +67,11 @@ import { AuthContext } from '../contexts/AuthContext';
 import "../App.css";
 
 export default function HomeComponent() {
-    const navigate = useNavigate();
+    let navigate = useNavigate();
     const { addToUserHistory } = useContext(AuthContext);
     const [meetingCode, setMeetingCode] = useState("");
 
-    const handleJoinVideoCall = async () => {
+    let handleJoinVideoCall = async () => {
         await addToUserHistory(meetingCode);
         navigate(`/${meetingCode}`);
     };
