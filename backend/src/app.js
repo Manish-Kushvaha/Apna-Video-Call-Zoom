@@ -27,8 +27,6 @@ app.use("/api/v1/users", userRoutes);
 
 const start = async () => {
     app.set("mongo_user");
-    // const connectionDb = await mongoose.connect("mongodb+srv://kushvahamanish555:sitaramcodetechzoom04@cluster0.vzisgwc.mongodb.net/");
-    // const connectionDb = await mongoose.connect(process.env.MONGO_URI);
     const connectionDb = await mongoose.connect(process.env.MONGO_URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true
