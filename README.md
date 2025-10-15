@@ -31,10 +31,12 @@ git clone https://github.com/Manish-Kushvaha/ChintanAI-Chatbot.git
 
 
 Install dependencies
+
 npm install
 
 
 # Add your API key, MONGODB URL in .env
 
 Start the development server
+
 npm run dev
